@@ -37,9 +37,11 @@
     </div>
   </div> -->
 
+  <div class="page-overlay"></div>
+
   <main data-barba="container" class="main" id="home" data-barba-namespace="home">
     <!-- Begin Navbar -->
-    <nav id="sticky" class="nav-up-down dark">
+    <nav id="sticky" class="nav-up-down dark navbar">
       <div class="row">
         <div class="flex-col left-nav slow-load">
           <a href="/" class="logo animate-logo">
@@ -93,31 +95,33 @@
 
     <!-- Begin Hero Section -->
     <section class="hero">
-      <div class="hero-container">
-        <!-- Background Video -->
-        <video autoplay muted loop id="hero-video" class="hero-video desktop-video">
-          <source src="../media/pages/home/sesshin-trim_cropped.mp4" type="video/mp4" id="video-source">
-          Your browser does not support HTML5 video.
-        </video>
-        <video autoplay muted loop id="hero-video" class="hero-video mobile-video">
-          <source src="../media/pages/home/sesshin-intro.mp4" type="video/mp4" id="video-source">
-          Your browser does not support HTML5 video.
-        </video>
-        <!-- Scroll down btn -->
-        <div class="scroll-down-container ellipse">
-          <a href="#vibes">
-            <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M3.10388 21.9535C3.74885 22.3256 4.79691 22.3256 5.44187 21.9535L26 10.0698L46.5985 21.9535C47.2434 22.3256 48.2915 22.3256 48.9364 21.9535C49.5814 21.5814 49.5814 20.9767 48.9364 20.6046L27.2093 8.06975C26.8868 7.8837 26.4837 7.79068 26.0403 7.79068C25.6372 7.79068 25.1938 7.8837 24.8713 8.06975L3.1442 20.6046C2.45893 20.9767 2.45892 21.5814 3.10388 21.9535V21.9535Z"
-                fill="white" />
-              <path
-                d="M3.10388 37.9535C3.74885 38.3256 4.79691 38.3256 5.44187 37.9535L26 26.0698L46.5985 37.9535C47.2434 38.3256 48.2915 38.3256 48.9364 37.9535C49.5814 37.5814 49.5814 36.9767 48.9364 36.6046L27.2093 24.0698C26.8868 23.8837 26.4837 23.7907 26.0403 23.7907C25.6372 23.7907 25.1938 23.8837 24.8713 24.0698L3.1442 36.6046C2.45893 36.9767 2.45892 37.5814 3.10388 37.9535V37.9535Z"
-                fill="white" />
-              <path
-                d="M3.10388 29.9535C3.74885 30.3256 4.79691 30.3256 5.44187 29.9535L26 18.0698L46.5985 29.9535C47.2434 30.3256 48.2915 30.3256 48.9364 29.9535C49.5814 29.5814 49.5814 28.9767 48.9364 28.6046L27.2093 16.0698C26.8868 15.8837 26.4837 15.7907 26.0403 15.7907C25.6372 15.7907 25.1938 15.8837 24.8713 16.0698L3.1442 28.6046C2.45893 28.9767 2.45892 29.5814 3.10388 29.9535V29.9535Z"
-                fill="white" />
-            </svg>
-          </a>
+      <div class="hero">
+        <div class="hero-container">
+          <!-- Background Video -->
+          <video autoplay muted loop id="hero-video" class="hero-video desktop-video">
+            <source src="../media/pages/home/sesshin-trim_cropped.mp4" type="video/mp4" id="video-source">
+            Your browser does not support HTML5 video.
+          </video>
+          <video autoplay muted loop id="hero-video" class="hero-video mobile-video">
+            <source src="../media/pages/home/sesshin-intro.mp4" type="video/mp4" id="video-source">
+            Your browser does not support HTML5 video.
+          </video>
+          <!-- Scroll down btn -->
+          <div class="scroll-down-container ellipse">
+            <a href="#vibes">
+              <svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.10388 21.9535C3.74885 22.3256 4.79691 22.3256 5.44187 21.9535L26 10.0698L46.5985 21.9535C47.2434 22.3256 48.2915 22.3256 48.9364 21.9535C49.5814 21.5814 49.5814 20.9767 48.9364 20.6046L27.2093 8.06975C26.8868 7.8837 26.4837 7.79068 26.0403 7.79068C25.6372 7.79068 25.1938 7.8837 24.8713 8.06975L3.1442 20.6046C2.45893 20.9767 2.45892 21.5814 3.10388 21.9535V21.9535Z"
+                  fill="white" />
+                <path
+                  d="M3.10388 37.9535C3.74885 38.3256 4.79691 38.3256 5.44187 37.9535L26 26.0698L46.5985 37.9535C47.2434 38.3256 48.2915 38.3256 48.9364 37.9535C49.5814 37.5814 49.5814 36.9767 48.9364 36.6046L27.2093 24.0698C26.8868 23.8837 26.4837 23.7907 26.0403 23.7907C25.6372 23.7907 25.1938 23.8837 24.8713 24.0698L3.1442 36.6046C2.45893 36.9767 2.45892 37.5814 3.10388 37.9535V37.9535Z"
+                  fill="white" />
+                <path
+                  d="M3.10388 29.9535C3.74885 30.3256 4.79691 30.3256 5.44187 29.9535L26 18.0698L46.5985 29.9535C47.2434 30.3256 48.2915 30.3256 48.9364 29.9535C49.5814 29.5814 49.5814 28.9767 48.9364 28.6046L27.2093 16.0698C26.8868 15.8837 26.4837 15.7907 26.0403 15.7907C25.6372 15.7907 25.1938 15.8837 24.8713 16.0698L3.1442 28.6046C2.45893 28.9767 2.45892 29.5814 3.10388 29.9535V29.9535Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>

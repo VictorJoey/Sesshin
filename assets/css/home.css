@@ -53,12 +53,12 @@ html {
 
 /* Hero Section */
 .hero {
-  background: var(--black);
+  background: var(--secondary);
 }
 
 .hero-container {
   position: relative;
-  clip-path: circle(7%);
+  clip-path: circle(0%);
 }
 
 .hero-video {
@@ -214,4 +214,19 @@ html {
 /* ScrollReveal extension */
 html.sr .reveal {
   visibility: hidden;
+}
+
+.page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--black);
+  z-index: 100;
+  clip-path: circle(0%);
+}
+
+.navbar {
+  opacity: 0;
 }
